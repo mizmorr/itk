@@ -40,6 +40,11 @@ func (h *HashTable) Insert(key string, value int) {
 	if h.slice[index].size() > needToRehashValue {
 		if h.needToRehash() {
 			h.rehash()
+
+			index := hash(len(h.slice), key)
+
+			h.slice[index].insert(key, value)
+
 			return
 		}
 	}
