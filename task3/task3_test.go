@@ -38,7 +38,7 @@ func TestDelete(t *testing.T) {
 	m.Add("banana", 7)
 
 	// Удаляем элемент
-	m.Delete("banana")
+	m.Remove("banana")
 
 	// Проверяем, что элемент был удалён
 	_, exists := m.Get("banana")

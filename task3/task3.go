@@ -4,6 +4,10 @@ type StringIntMap struct {
 	innerMap map[string]int
 }
 
+func NewStringIntMap() *StringIntMap {
+	return &StringIntMap{innerMap: map[string]int{}}
+}
+
 func (m *StringIntMap) Add(key string, value int) {
 	m.innerMap[key] = value
 }
@@ -13,7 +17,7 @@ func (m *StringIntMap) Get(key string) (int, bool) {
 	return value, exists
 }
 
-func (m *StringIntMap) Delete(key string) {
+func (m *StringIntMap) Remove(key string) {
 	delete(m.innerMap, key)
 }
 

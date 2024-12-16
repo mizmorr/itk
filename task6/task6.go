@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-const timeToStop = 10
+const timeToStop = 1
 
 type lcg struct {
 	seed       int64

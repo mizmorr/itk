@@ -59,7 +59,8 @@ func Task2() {
 	newSlice = removeElement(newSlice, 5)
 
 	fmt.Println("Original slice:", originalSlice)
-	fmt.Println("New slice after adding 1000 and removing the fifth element:", newSlice)
+
+	fmt.Println("New slice with evens after adding 1000 and removing the fifth element:", newSlice)
 }
 
 func sliceExample2(originalSlice []int) []int {
